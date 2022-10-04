@@ -9,17 +9,18 @@ import UIKit
 import Flutter
 import FlutterPluginRegistrant
 
+
 class ViewController: UIViewController {
 
   lazy var flutterEngines = FlutterEngineGroup(name: "deepId-ident", project: nil)
   
-  lazy var flutterEngine: FlutterEngine = {
-    let result = flutterEngines.makeEngine(with: nil)
-    let thing = result.run(withEntrypoint: nil, initialRoute: "/idBack_document_scan")
-    print(thing)
-    return result
-  }()
-
+//  lazy var flutterEngine: FlutterEngine = {
+//    let result = flutterEngines.makeEngine(with: nil)
+//    let thing = result.run(withEntrypoint: nil, initialRoute: "/idBack_document_scan")
+//    print(thing)
+//    return result
+//  }()
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -27,7 +28,9 @@ class ViewController: UIViewController {
 
   @IBAction
   func bla() {
-    let flutterViewController = FlutterViewController(engine: self.flutterEngine, nibName: nil, bundle: nil)
+      let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+
+    let flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
     self.present(flutterViewController, animated: false, completion: nil)
 
   }
