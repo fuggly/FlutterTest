@@ -7,7 +7,15 @@ PODS:
   - flutter_nfc_kit (2.0.0):
     - Flutter
   - FlutterPluginRegistrant (0.0.1):
+    - app_settings
+    - camera_avfoundation
     - Flutter
+    - flutter_nfc_kit
+    - google_mlkit_commons
+    - google_mlkit_face_detection
+    - permission_handler_apple
+    - sensors_plus
+    - wakelock
   - google_mlkit_commons (0.2.0):
     - Flutter
     - MLKitVision
@@ -134,7 +142,7 @@ SPEC CHECKSUMS:
   camera_avfoundation: 07c77549ea54ad95d8581be86617c094a46280d9
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
   flutter_nfc_kit: 965c98c3fa68f5609f1cc89abb968fe1b8ffdbaa
-  FlutterPluginRegistrant: 58acfb6cb31ee4ca14f920aba101815efda113ee
+  FlutterPluginRegistrant: ba7cc9fbbc575c01c464543292449a9df7259d04
   google_mlkit_commons: e9070f57232c3a3e4bd42fdfa621bb1f4bb3e709
   google_mlkit_face_detection: 37e11922bc916867cf325589261efbe5cb46fd97
   GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
